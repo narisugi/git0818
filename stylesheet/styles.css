@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  #spinButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  #resultContainer {
+    margin-top: 20px;
+  }

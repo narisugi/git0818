@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>果物ガチャ</title>
+  <link rel="stylesheet" href="./stylesheet/styles.css">
+</head>
+<body>
+  <button id="spinButton">ガチャを回す</button>
+  <div id="resultContainer">
+    <p id="result">ここに結果が表示されます</p>
+  </div>
+  <script>
+    const fruits = ['りんご', 'バナナ', 'みかん', 'ぶどう', 'スイカ', 'パイナップル'];
+const spinButton = document.getElementById('spinButton');
+const resultElement = document.getElementById('result');
+spinButton.addEventListener('click', () => {
+  const randomIndex = Math.floor(Math.random() * fruits.length);
+  const selectedFruit = fruits[randomIndex];
+  resultElement.textContent = `当たり！ ${selectedFruit} が出ました！`;
+});
+  </script>
+</body>
+</html>
